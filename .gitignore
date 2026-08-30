@@ -1,22 +1,43 @@
-# 🧹 ---- .gitignore for CounterStrikeSharpListenerWsServer ----
+# 🧹 CounterStrikeSharpListenerWsServer 本地文件
 
-# 🗂️ temp / tmp
+# 🗂️ 临时目录
 temp/
 tmp/
 
-# 🔧 ---- .NET build artifacts ----
+# 🔧 .NET 构建与本地 SDK 目录
 bin/
 obj/
+.dotnet/
+.nuget/
 
-# 🐍 ---- Python virtual environment & cache ----
+# 🐍 Python 虚拟环境与缓存
 **/venv/
 **/.venv/
 **/__pycache__/
 *.pyc
 
-# 💻 ---- IDE & editors ----
+# 📦 打包、发布与测试产物
+output/
+package/
+release/
+TestResults/
+coverage/
+*.zip
+*.trx
+
+# 🎮 本地运行状态与数据库
+*.log
+*.sqlite
+*.db
+*.db-shm
+*.db-wal
+
+# 💻 IDE、编辑器与操作系统文件
+.vs/
 .vscode/
 .idea/
+*.user
+*.suo
 *.swp
 .DS_Store
 Thumbs.db
